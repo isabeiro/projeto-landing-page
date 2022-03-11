@@ -6,32 +6,68 @@
 
 header {
     width: auto;
-    height: 400px;
-    display: flex;
-    padding: 20px;
-    //background: $color-secondary;
-    border: 10px solid $color-secondary;
-    border-radius: 0% 0% 0% 200px;
+    height: 250px;
+    text-align: center;
+    padding: 50px 10px 10px 10px;
+    color: white;
+    background-color: $color-secondary;
 
-    h1 {
-        font-size: 20px;
-        font-style: none;
-        text-align: center;  
+    .title {
+
+        h1 {
+            font-style: none;
+            text-align: center;
+            font-size: 20px;
+            padding: 2px;
+        }
+
+        h2 {
+            font-size: 40px;
+            padding: 5px;
+        }
+
+        p {
+            padding-top: 15px;
+        }
+        
     }
-
     .menu {
         height: 100px;
-        position: absolute;
         top: 200px;
-        //display: block;
-        //padding: 50px;
-        //text-align: end;        
-        
+        padding-top: 50px;
+                
         button {
+            border: 3px solid $color-secondary;
+            border-radius: 5px;
             height: 40px;
             width: 160px;
-            padding: 5px;
-            font-size: 15px;       
+            margin: 30px;
+            font-size: 15px;
+            color: $color-tertiary;       
         }
+    }
+}
+
+
+.container {
+    position: absolute;
+    
+    .divider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        fill: $color-secondary;
+        
+        
+        svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+        }
+
     }
 }
